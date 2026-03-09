@@ -8,19 +8,18 @@ consensus: true
 stream: IETF
 updates: 9595
 
-docname: draft-bormann-cbor-yang-metadata-latest
+docname: draft-ietf-core-yang-metadata-latest
 number:
 date:
-area: ART (Applications and Real-Time)
-workgroup: CBOR
+area: WIT (Web and Internet Transport)
+workgroup: core
 keyword:
 venue:
-  mail: cbor@ietf.org
-  github: cabo/yang-metadata
+  mail: core@ietf.org
+  github: core-wg/draft-ietf-core-yang-metadata
 
 author:
   -
-    ins: C. Bormann
     name: Carsten Bormann
     org: Universität Bremen TZI
     street: Postfach 330440
@@ -344,7 +343,3 @@ In the registry "CBOR Tags" {{-tags}}, IANA is requested to allocate one tag:
 {:unnumbered}
 
 Andy Bierman brought up the need for this document.
-
-
-
-
