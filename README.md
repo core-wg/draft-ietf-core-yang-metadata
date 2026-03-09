@@ -1,19 +1,19 @@
 # Representing metadata annotations in YANG-CBOR
 
-This is the working area for the individual Internet-Draft, "Representing metadata annotations in YANG-CBOR".
+This is the working area for the CoRE Working Group Internet-Draft, "Representing metadata annotations in YANG-CBOR".
 
-* [Editor's Copy](https://cabo.github.io/yang-metadata/#go.draft-bormann-cbor-yang-metadata.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-bormann-cbor-yang-metadata)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-bormann-cbor-yang-metadata)
-* [Compare Editor's Copy to Individual Draft](https://cabo.github.io/yang-metadata/#go.draft-bormann-cbor-yang-metadata.diff)
+* [Editor's Copy](https://core-wg.github.io/draft-ietf-core-yang-metadata/#go.draft-ietf-core-yang-metadata.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-core-yang-metadata)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-core-yang-metadata)
+* [Compare Editor's Copy to Working Group Draft](https://core-wg.github.io/draft-ietf-core-yang-metadata/#go.draft-ietf-core-yang-metadata.diff)
 
 
-[Access to all branches](https://cabo.github.io/yang-metadata/)
+[Access to all branches](https://core-wg.github.io/draft-ietf-core-yang-metadata/)
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/cabo/yang-metadata/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/core-wg/draft-ietf-core-yang-metadata/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
