@@ -1,7 +1,7 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-08T02:50:34.768695+00:00",
-  "repo": "cabo/yang-metadata",
+  "timestamp": "2026-03-10T02:43:14.855690+00:00",
+  "repo": "core-wg/draft-ietf-core-yang-metadata",
   "labels": [
     {
       "name": "bug",
