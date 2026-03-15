@@ -128,12 +128,6 @@ In essence, the `annotated-data-node` *stands in* for the
 ignore all metadata received can simply replace each
 `annotated-data-node` by the `Instance-Representation` embedded in it.
 
-[^question]: (Editor's note:) QUESTION:
-
-[^question] Do we need to represent metadata maps without the actual
-instance representation present?  If yes, we could simply make the
-second element of the array in {{fig-metadata-tag}} optional.
-
 [^question] This representation assumes that it is good that metadata
 always come before the actual data node, as would also be the case
 with XML attributes.
@@ -331,7 +325,7 @@ The security considerations of {{RFC7952}} and {{RFC9254}} apply.
 In the registry "CBOR Tags" {{-tags}}, IANA is requested to allocate one tag:
 
 * Tag: CPA109
-* Data item: Array `[metadata, ?data]`
+* Data item: Array `[metadata, data]`
 * Semantics: "YANG data node with metadata annotations"
 * Reference: This document
 
