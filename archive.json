@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-15T03:23:36.463384+00:00",
+  "timestamp": "2026-03-17T02:48:24.899841+00:00",
   "repo": "core-wg/draft-ietf-core-yang-metadata",
   "labels": [
     {
@@ -50,5 +50,54 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOLt8NaM7Kv2ze",
+      "title": "Metadata do need a data tree node to attach to",
+      "url": "https://github.com/core-wg/draft-ietf-core-yang-metadata/pull/1",
+      "state": "OPEN",
+      "author": "cabo",
+      "authorAssociation": "MEMBER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2026-03-15T18:39:15Z",
+      "updatedAt": "2026-03-15T18:47:56Z",
+      "baseRepository": "core-wg/draft-ietf-core-yang-metadata",
+      "baseRefName": "main",
+      "baseRefOid": "158cdd560294b1c904ef369f04bfca6af3ea5491",
+      "headRepository": "core-wg/draft-ietf-core-yang-metadata",
+      "headRefName": "metadata-need-data",
+      "headRefOid": "1ee4d06cf283df29377ea969277de7c5be75aa35",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "abierman",
+          "authorAssociation": "NONE",
+          "body": "Note that XML and JSON does support sending node= [metadata,data]\r\nbut it is possible for data to be an empty object or array or zero-length string.\r\n",
+          "createdAt": "2026-03-15T18:47:56Z",
+          "updatedAt": "2026-03-15T18:47:56Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLt8NaM7rd_zD",
+          "commit": {
+            "abbreviatedOid": "1ee4d06"
+          },
+          "author": "abierman",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2026-03-15T18:43:32Z",
+          "updatedAt": "2026-03-15T18:43:32Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
 }
