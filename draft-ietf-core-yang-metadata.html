@@ -13,21 +13,21 @@
 representation of SIDs for metadata annotations in the ".sid" files
 defined there. 
     ' name="description">
-<meta content="xml2rfc 3.31.0" name="generator">
+<meta content="xml2rfc 3.32.0" name="generator">
 <meta content="draft-ietf-core-yang-metadata-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.31.0
+  xml2rfc 3.32.0
     Python 3.12.12
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.2.1
     Jinja2 3.1.6
     lxml 6.0.2
-    platformdirs 4.5.1
+    platformdirs 4.9.4
     pycountry 24.6.1
     PyYAML 6.0.3
     requests 2.32.5
-    wcwidth 0.3.0
+    wcwidth 0.6.0
 -->
 <link href="draft-ietf-core-yang-metadata.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1052,7 +1052,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Bormann</td>
-<td class="center">Expires 10 September 2026</td>
+<td class="center">Expires 21 September 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1068,12 +1068,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc9595" class="eref">9595</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2026-03-09" class="published">9 March 2026</time>
+<time datetime="2026-03-20" class="published">20 March 2026</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-09-10">10 September 2026</time></dd>
+<dd class="expires"><time datetime="2026-09-21">21 September 2026</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1126,7 +1126,7 @@ defined there.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 10 September 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 21 September 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1294,16 +1294,13 @@ annotated-data-node&lt;Instance-Representation&gt; = #6.109([ ; CPA109
 <code>Instance-Representation</code>; a consuming implementation that wants to
 ignore all metadata received can simply replace each
 <code>annotated-data-node</code> by the <code>Instance-Representation</code> embedded in it.<a href="#section-2-6" class="pilcrow">¶</a></p>
-<p id="section-2-7"><span class="cref" id="question">(Editor's note:) QUESTION:</span> Do we need to represent metadata maps without the actual
-instance representation present?  If yes, we could simply make the
-second element of the array in <a href="#fig-metadata-tag" class="auto internal xref">Figure 1</a> optional.<a href="#section-2-7" class="pilcrow">¶</a></p>
-<p id="section-2-8"><span class="cref" id="question_1">(Editor's note:) QUESTION:</span> This representation assumes that it is good that metadata
+<p id="section-2-7">[^question] This representation assumes that it is good that metadata
 always come before the actual data node, as would also be the case
 with XML attributes.
 Sections <a href="https://rfc-editor.org/rfc/rfc7952#section-5.2.3" class="relref">5.2.3</a> and <a href="https://rfc-editor.org/rfc/rfc7952#section-5.2.4" class="relref">5.2.4</a> of <span>[<a href="#RFC7952" class="cite xref">RFC7952</a>]</span> show examples with metadata last,
 though.
 Can we simply focus on one of these orders (always first, or always last), or do
-we really need to support both (avoid!)?<a href="#section-2-8" class="pilcrow">¶</a></p>
+we really need to support both (avoid!)?<a href="#section-2-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="examples">
@@ -1654,7 +1651,7 @@ leaf namespace {
             <p id="section-6.1-2.1.1">Tag: CPA109<a href="#section-6.1-2.1.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-6.1-2.2">
-            <p id="section-6.1-2.2.1">Data item: Array <code>[metadata, ?data]</code><a href="#section-6.1-2.2.1" class="pilcrow">¶</a></p>
+            <p id="section-6.1-2.2.1">Data item: Array <code>[metadata, data]</code><a href="#section-6.1-2.2.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-6.1-2.3">
             <p id="section-6.1-2.3.1">Semantics: "YANG data node with metadata annotations"<a href="#section-6.1-2.3.1" class="pilcrow">¶</a></p>

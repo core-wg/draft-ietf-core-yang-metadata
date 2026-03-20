@@ -4,9 +4,9 @@
 
 core                                                          C. Bormann
 Internet-Draft                                    Universität Bremen TZI
-Updates: 9595 (if approved)                                 9 March 2026
+Updates: 9595 (if approved)                                20 March 2026
 Intended status: Standards Track                                        
-Expires: 10 September 2026
+Expires: 21 September 2026
 
 
              Representing metadata annotations in YANG-CBOR
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Bormann                 Expires 10 September 2026               [Page 1]
+Bormann                 Expires 21 September 2026               [Page 1]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
-   This Internet-Draft will expire on 10 September 2026.
+   This Internet-Draft will expire on 21 September 2026.
 
 Copyright Notice
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Bormann                 Expires 10 September 2026               [Page 2]
+Bormann                 Expires 21 September 2026               [Page 2]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -165,7 +165,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 3]
+Bormann                 Expires 21 September 2026               [Page 3]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -186,18 +186,12 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
    metadata received can simply replace each annotated-data-node by the
    Instance-Representation embedded in it.
 
-
-   // (Editor's note:) QUESTION: Do we need to represent metadata maps
-   without the actual instance representation present?  If yes, we could
-   simply make the second element of the array in Figure 1 optional.
-
-
-   // (Editor's note:) QUESTION: This representation assumes that it is
-   good that metadata always come before the actual data node, as would
-   also be the case with XML attributes.  Sections 5.2.3 and 5.2.4 of
-   [RFC7952] show examples with metadata last, though.  Can we simply
-   focus on one of these orders (always first, or always last), or do we
-   really need to support both (avoid!)?
+   [^question] This representation assumes that it is good that metadata
+   always come before the actual data node, as would also be the case
+   with XML attributes.  Sections 5.2.3 and 5.2.4 of [RFC7952] show
+   examples with metadata last, though.  Can we simply focus on one of
+   these orders (always first, or always last), or do we really need to
+   support both (avoid!)?
 
 3.  Examples
 
@@ -221,7 +215,13 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 4]
+
+
+
+
+
+
+Bormann                 Expires 21 September 2026               [Page 4]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -277,7 +277,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 5]
+Bormann                 Expires 21 September 2026               [Page 5]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -333,7 +333,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 6]
+Bormann                 Expires 21 September 2026               [Page 6]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -389,7 +389,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 7]
+Bormann                 Expires 21 September 2026               [Page 7]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -445,7 +445,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 8]
+Bormann                 Expires 21 September 2026               [Page 8]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -457,7 +457,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
    *  Tag: CPA109
 
-   *  Data item: Array [metadata, ?data]
+   *  Data item: Array [metadata, data]
 
    *  Semantics: "YANG data node with metadata annotations"
 
@@ -501,7 +501,7 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026               [Page 9]
+Bormann                 Expires 21 September 2026               [Page 9]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -557,7 +557,7 @@ Author's Address
 
 
 
-Bormann                 Expires 10 September 2026              [Page 10]
+Bormann                 Expires 21 September 2026              [Page 10]
 
 Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
@@ -613,4 +613,4 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 10 September 2026              [Page 11]
+Bormann                 Expires 21 September 2026              [Page 11]
