@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2026-03-19T02:56:13.932620+00:00",
+  "timestamp": "2026-03-22T03:13:46.083094+00:00",
   "repo": "core-wg/draft-ietf-core-yang-metadata",
   "labels": [
     {
@@ -56,24 +56,26 @@
       "id": "PR_kwDOLt8NaM7Kv2ze",
       "title": "Metadata do need a data tree node to attach to",
       "url": "https://github.com/core-wg/draft-ietf-core-yang-metadata/pull/1",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "cabo",
       "authorAssociation": "MEMBER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2026-03-15T18:39:15Z",
-      "updatedAt": "2026-03-15T18:47:56Z",
+      "updatedAt": "2026-03-20T03:07:56Z",
       "baseRepository": "core-wg/draft-ietf-core-yang-metadata",
       "baseRefName": "main",
       "baseRefOid": "158cdd560294b1c904ef369f04bfca6af3ea5491",
       "headRepository": "core-wg/draft-ietf-core-yang-metadata",
       "headRefName": "metadata-need-data",
       "headRefOid": "1ee4d06cf283df29377ea969277de7c5be75aa35",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2026-03-20T03:07:56Z",
+      "mergedAt": "2026-03-20T03:07:56Z",
+      "mergedBy": "cabo",
+      "mergeCommit": {
+        "oid": "e9f023347f19ea5cc2b6d6a32a7dde9bae0f157d"
+      },
       "comments": [
         {
           "author": "abierman",
