@@ -4,9 +4,9 @@
 
 core                                                          C. Bormann
 Internet-Draft                                    Universität Bremen TZI
-Updates: 9595 (if approved)                                20 March 2026
+Updates: 9595 (if approved)                              20 October 2026
 Intended status: Standards Track                                        
-Expires: 21 September 2026
+Expires: 23 April 2027
 
 
              Representing metadata annotations in YANG-CBOR
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Bormann                 Expires 21 September 2026               [Page 1]
+Bormann                   Expires 23 April 2027                 [Page 1]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
-   This Internet-Draft will expire on 21 September 2026.
+   This Internet-Draft will expire on 23 April 2027.
 
 Copyright Notice
 
@@ -99,7 +99,7 @@ Table of Contents
    This specification defines the representation of metadata annotations
    [RFC7952] in YANG-CBOR [RFC9254].
 
-   It updates [RFC9595] to add a separate namespace enabling the
+   It updates [RFC9595] to add a separate SID namespace enabling the
    representation of SIDs for metadata annotations in the ".sid" files
    defined there.
 
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Bormann                 Expires 21 September 2026               [Page 2]
+Bormann                   Expires 23 April 2027                 [Page 2]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
 1.1.  Conventions and Definitions
@@ -165,9 +165,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026               [Page 3]
+Bormann                   Expires 23 April 2027                 [Page 3]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
    Metadata annotations are added to a data node instance by replacing
@@ -186,12 +186,13 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
    metadata received can simply replace each annotated-data-node by the
    Instance-Representation embedded in it.
 
-   [^question] This representation assumes that it is good that metadata
-   always come before the actual data node, as would also be the case
-   with XML attributes.  Sections 5.2.3 and 5.2.4 of [RFC7952] show
-   examples with metadata last, though.  Can we simply focus on one of
-   these orders (always first, or always last), or do we really need to
-   support both (avoid!)?
+
+   // (Editor's note:) QUESTION: This representation assumes that it is
+   good that metadata always come before the actual data node, as would
+   also be the case with XML attributes.  Sections 5.2.3 and 5.2.4 of
+   [RFC7952] show examples with metadata last, though.  Can we simply
+   focus on one of these orders (always first, or always last), or do we
+   really need to support both (avoid!)?
 
 3.  Examples
 
@@ -220,10 +221,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-
-Bormann                 Expires 21 September 2026               [Page 4]
+Bormann                   Expires 23 April 2027                 [Page 4]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
               +=====================================+=======+
@@ -277,9 +277,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026               [Page 5]
+Bormann                   Expires 23 April 2027                 [Page 5]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
    {
@@ -333,9 +333,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026               [Page 6]
+Bormann                   Expires 23 April 2027                 [Page 6]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
 3.2.  Examples from Section 5.2.3 of [RFC7952]
@@ -389,9 +389,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026               [Page 7]
+Bormann                   Expires 23 April 2027                 [Page 7]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
 3.3.  Examples from Section 5.2.4 of [RFC7952]
@@ -445,9 +445,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026               [Page 8]
+Bormann                   Expires 23 April 2027                 [Page 8]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
 6.1.  CBOR Tags Registry
@@ -501,9 +501,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026               [Page 9]
+Bormann                   Expires 23 April 2027                 [Page 9]
 
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
 
 
    [RFC9254]  Veillette, M., Ed., Petrov, I., Ed., Pelov, A., Bormann,
@@ -538,11 +538,10 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 7.2.  Informative References
 
    [I-D.ietf-cbor-edn-literals]
-              Bormann, C., "CBOR Extended Diagnostic Notation (EDN)",
-              Work in Progress, Internet-Draft, draft-ietf-cbor-edn-
-              literals-20, 2 March 2026,
-              <https://datatracker.ietf.org/doc/html/draft-ietf-cbor-
-              edn-literals-20>.
+              Bormann, C., "Concise Diagnostic Notation (CDN)", Work in
+              Progress, Internet-Draft, draft-ietf-cbor-edn-literals-28,
+              29 September 2026, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-cbor-edn-literals-28>.
 
 Acknowledgments
 
@@ -550,23 +549,19 @@ Acknowledgments
 
 Author's Address
 
-
-
-
-
-
-
-
-Bormann                 Expires 21 September 2026              [Page 10]
-
-Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
-
-
    Carsten Bormann
    Universität Bremen TZI
    Postfach 330440
    D-28359 Bremen
    Germany
+
+
+
+Bormann                   Expires 23 April 2027                [Page 10]
+
+Internet-Draft      Metadata Annotations in YANG-CBOR       October 2026
+
+
    Phone: +49-421-218-63921
    Email: cabo@tzi.org
 
@@ -613,4 +608,9 @@ Internet-Draft      Metadata Annotations in YANG-CBOR         March 2026
 
 
 
-Bormann                 Expires 21 September 2026              [Page 11]
+
+
+
+
+
+Bormann                   Expires 23 April 2027                [Page 11]
