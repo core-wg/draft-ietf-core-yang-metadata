@@ -62,7 +62,7 @@ defined there.
 This specification defines the representation of metadata annotations
 {{RFC7952}} in YANG-CBOR {{RFC9254}}.
 
-It updates {{RFC9595}} to add a separate namespace enabling the
+It updates {{RFC9595}} to add a separate SID namespace enabling the
 representation of SIDs for metadata annotations in the ".sid" files
 defined there.
 
