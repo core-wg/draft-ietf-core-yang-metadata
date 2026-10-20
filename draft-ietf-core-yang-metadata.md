@@ -55,6 +55,8 @@ defined there.
 
 --- middle
 
+[^question]: (Editor's note:) QUESTION:
+
 # Introduction
 
 This specification defines the representation of metadata annotations
